@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(450,420)" to="(480,420)"/>
+    <wire from="(510,420)" to="(540,420)"/>
+    <wire from="(710,170)" to="(730,170)"/>
+    <wire from="(710,190)" to="(730,190)"/>
+    <wire from="(680,120)" to="(710,120)"/>
+    <wire from="(680,240)" to="(710,240)"/>
+    <wire from="(770,170)" to="(800,170)"/>
+    <wire from="(770,190)" to="(800,190)"/>
+    <wire from="(800,150)" to="(830,150)"/>
+    <wire from="(800,210)" to="(830,210)"/>
+    <wire from="(540,470)" to="(540,700)"/>
+    <wire from="(770,180)" to="(830,180)"/>
+    <wire from="(450,420)" to="(450,730)"/>
+    <wire from="(480,420)" to="(480,440)"/>
+    <wire from="(450,400)" to="(450,420)"/>
+    <wire from="(510,400)" to="(510,420)"/>
+    <wire from="(480,470)" to="(480,710)"/>
+    <wire from="(800,150)" to="(800,170)"/>
+    <wire from="(800,190)" to="(800,210)"/>
+    <wire from="(710,120)" to="(710,170)"/>
+    <wire from="(710,190)" to="(710,240)"/>
+    <wire from="(540,420)" to="(540,440)"/>
+    <wire from="(510,420)" to="(510,700)"/>
+    <comp lib="5" loc="(830,210)" name="LED">
+      <a name="label" val="A&lt;B"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="Calibri bold 14"/>
+    </comp>
+    <comp lib="0" loc="(680,120)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3 A2 A1 A0"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="1" loc="(480,470)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="6" loc="(662,225)" name="Text">
+      <a name="text" val="B"/>
+      <a name="font" val="Calibri bold 14"/>
+    </comp>
+    <comp lib="6" loc="(658,104)" name="Text">
+      <a name="text" val="A"/>
+      <a name="font" val="Calibri bold 14"/>
+    </comp>
+    <comp lib="1" loc="(540,470)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(680,240)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3 B2 B1 B0"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="6" loc="(768,59)" name="Text">
+      <a name="text" val="Experiment No 14 :- 4-bit  Magnitude Comparator"/>
+      <a name="font" val="Calibri bold 14"/>
+    </comp>
+    <comp lib="0" loc="(510,400)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Calibri bold 16"/>
+    </comp>
+    <comp lib="5" loc="(830,180)" name="LED">
+      <a name="label" val="A=B"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="Calibri bold 14"/>
+    </comp>
+    <comp lib="3" loc="(770,180)" name="Comparator"/>
+    <comp lib="0" loc="(450,400)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Calibri bold 16"/>
+    </comp>
+    <comp lib="6" loc="(565,346)" name="Text">
+      <a name="text" val="Input - A"/>
+      <a name="font" val="Calibri bold 16"/>
+    </comp>
+    <comp lib="5" loc="(830,150)" name="LED">
+      <a name="label" val="A&gt;B"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="Calibri bold 14"/>
+    </comp>
+  </circuit>
+</project>
